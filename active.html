@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* utilities */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px 50px;
+            font-family: 'Lexend';
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .center{
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* color.css */
+
+        .primary {
+            color: #BA5112;
+        }
+
+        .secondary {
+            color: #251814;
+        }
+
+        .white-bg {
+            background-color: #fff;
+        }
+
+        .primary-bg {
+            background-color: #BA5112;
+        }
+
+        .highlight-bg {
+            background-color: #EDB046;
+        }
+
+        /* active.css */
+
+        aside {
+            /* background-color: aqua; */
+            width: 280px;
+            padding-top: 35px;
+            margin-right: 12px;
+            height: 500px;
+        }
+
+        aside>div {
+            gap: 4em;
+        }
+
+        main {
+            /* background-color: pink; */
+            height: 100vh;
+            flex-grow: 5;
+            padding-top: 35px;
+        }
+
+        .logo {
+            font-size: 36px;
+        }
+
+        .status {
+            padding-top: 6px;
+            font-size: 28px;
+        }
+
+        .btn-signout {
+            width: 9em;
+            height: 3.2em;
+        }
+
+        .btn-addtask {
+            width: 78%;
+            height: 4em;
+            box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2), 0 0px 16px 0 rgba(0, 0, 0, 0.2);
+            padding: 0 15px;
+        }
+
+        .btn-addtask>span {
+            font-size: 20px;
+        }
+
+        .btn-addtask>i {
+            font-size: 36px;
+        }
+
+        .btn {
+            /* display: block; */
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 6px;
+            color: #fff;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .nav {
+            list-style: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav>li {
+            display: flex;
+            margin-bottom: 20px;
+            height: 40px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .main-container {
+            padding: 40px;
+        }
+
+        .todo-list >ul {
+            list-style: none;
+            margin: 60px 7px;
+            padding: 10px;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .todo-list>ul>li{
+            padding: 22px 24px;
+            border-radius: 17px;
+            background-color: #fff;
+            box-shadow: 2px 1px 0.15em 0.1em rgba(0, 0, 0, 0.25);
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <aside>
+            <div class="column align-items-center">
+                <p class="logo primary bg">To-Do App</p>
+                <button class="btn btn-addtask white-bg row center">
+                    <div class="secondary">Add Task&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <i class="fa fa-plus-circle primary"></i>
+                </button>
+                <ul class="nav">
+                    <li>Dashboard</li>
+                    <li class="highlight-bg">Active</li>
+                    <li>Completed</li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <div class="column">
+                <div class="row space-between">
+                    <p class="status secondary">Active</p>
+                    <button type="button"
+                        class="btn btn-signout primary-bg row center">
+                        <span>Sign out&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <i class="fa fa-sign-out"></i>
+                    </button>
+                    </a>
+                </div>
+
+
+                <div class="main-container column">
+                    <div class="row space-between center">
+                        <span class="status"><b>Today's Active Tasks</b></span>
+                        <span>Monday, 18 December 2023</span>                        
+                    </div>
+                    <div class="column center todo-list">
+                        <ul>
+                            <li>Buy monthly groceries</li>
+                            <li>Buy monthly groceries</li>
+                            <li>Buy monthly groceries</li>
+                            <li>Buy monthly groceries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
