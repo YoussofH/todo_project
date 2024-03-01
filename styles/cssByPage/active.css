@@ -1,0 +1,103 @@
+aside {
+    /* background-color: aqua; */
+    width: 280px;
+    padding-top: 35px;
+    margin-right: 12px;
+    height: 500px;
+}
+
+aside>div {
+    gap: 4em;
+}
+
+main {
+    /* background-color: pink; */
+    height: 100vh;
+    flex-grow: 5;
+    padding-top: 35px;
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.status {
+    padding-top: 6px;
+    font-size: 28px;
+}
+
+.btn-signout {
+    width: 9em;
+    height: 3.2em;
+}
+
+.btn-addtask {
+    width: 78%;
+    height: 4em;
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2), 0 0px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 15px;
+}
+
+.btn-addtask>span {
+    font-size: 20px;
+}
+
+.btn-addtask>i {
+    font-size: 36px;
+}
+
+.btn {
+    /* display: block; */
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.nav {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.nav>li {
+    display: flex;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.main-container {
+    padding: 40px;
+}
+
+.todo-list >ul {
+    list-style: none;
+    margin: 60px 7px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.todo-list>ul>li{
+    padding: 22px 24px;
+    border-radius: 17px;
+    background-color: #fff;
+    box-shadow: 2px 1px 0.15em 0.1em rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
+}
+
+.todo-list>ul>li>i{
+    font-size: 36px;
+    margin-right: 15px;
+}
